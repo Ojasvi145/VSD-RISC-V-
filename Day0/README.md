@@ -22,6 +22,9 @@ graphviz xdot pkg-config python3 libboost-system-dev \
 libboost-python-dev libboost-filesystem-dev zlib1g-dev 
 $ make config-gcc 
 $ make  
-$ sudo make install 
+$ sudo make install ```
+
+![Alt text](IMAGES/Screenshot from 2025-09-19 14-58-59.png)
+
 
 
