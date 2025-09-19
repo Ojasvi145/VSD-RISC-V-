@@ -5,8 +5,8 @@
 
 ## 2.System Installation
   6GB RAM, 50 GB HDD 
-  Ubuntu 20.04+ 
-  4vCPU
+  ,Ubuntu 20.04+ 
+  ,4vCPU
 
 ## 3.Tools installation 
 
@@ -23,4 +23,5 @@ libboost-python-dev libboost-filesystem-dev zlib1g-dev
 $ make config-gcc 
 $ make  
 $ sudo make install 
-  
+
+
