@@ -25,7 +25,7 @@ $ make
 $ sudo make install
 ```
 
-![Alt text](IMAGES/Screenshot%from%2025-09-19%14-58-59.png)
+![Alt text](IMAGES/yosys.png)
 
 
 
