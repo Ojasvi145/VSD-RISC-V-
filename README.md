@@ -1,1 +1,1 @@
-# VSD-RISC-V
+# RISC‑V Reference SoC Tapeout Program
