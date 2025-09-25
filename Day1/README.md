@@ -39,3 +39,13 @@ yosys> synth -top good_mux
 yosys> abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib                     
 yosys> show
 ```
+![Alt text](IMAGES/18.png)
+
+```bash
+yosys> write_verilog good_mux_netlist.v
+yosys> !gvim good_mux_netlist.v
+yosys> write_verilog -noattr good_mux_netlist.v
+yosys> !gvim good_mux_netlist.v
+```
+![Alt text](IMAGES/19.png)
+![Alt text](IMAGES/20.png)
