@@ -63,9 +63,50 @@ $ gtkwave tb_dff_const1.vcd
 ```
 ![Alt text](IMAGES/9.png)
 
+```bash
+$yosys
+yosys> read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib           
+yosys> read_verilog dff_const1.v                                                     
+yosys> synth -top dff_const1                                                         
+yosys> dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib                    
+yosys> show 
+```
+![Alt text](IMAGES/10.png)
 
+```bash
+$yosys
+yosys> read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib           
+yosys> read_verilog dff_const2.v                                                     
+yosys> synth -top dff_const2                                                       
+yosys> dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib                    
+yosys> show 
+```
+![Alt text](IMAGES/11.png)
+
+```bash
+$yosys
+yosys> read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib           
+yosys> read_verilog dff_const3.v                                                     
+yosys> synth -top dff_const3                                                         
+yosys> dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib                    
+yosys> show 
+```
+![Alt text](IMAGES/12.png)
 
 ## Optimization of unused state
 
-
-
+```bash
+$yosys
+yosys> read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib           
+yosys> read_verilog counter_opt.v                                                     
+yosys> synth -top counter_opt                                                        
+yosys> dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib                    
+yosys> show 
+```
+![Alt text](IMAGES/13.png)
+![Alt text](IMAGES/14.png)
+![Alt text](IMAGES/15.png)
