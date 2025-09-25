@@ -104,9 +104,20 @@ yosys> read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 yosys> read_verilog counter_opt.v                                                     
 yosys> synth -top counter_opt                                                        
 yosys> dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> opt_clean -purge
 yosys> abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib                    
 yosys> show 
 ```
 ![Alt text](IMAGES/13.png)
+
+```bash
+$yosys
+yosys> read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib           
+yosys> read_verilog counter_opt.v                                                     
+yosys> synth -top counter_opt                                                        
+yosys> dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib                    
+yosys> show 
+```
 ![Alt text](IMAGES/14.png)
 ![Alt text](IMAGES/15.png)
