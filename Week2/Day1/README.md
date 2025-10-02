@@ -5,6 +5,6 @@ In week 2 we are going to build a solid understanding of SoC fundamentals and pr
 
 ## Part 1 : Theory (Fundamentals of SoC Design) 
 VSDBabySoC an open source system on chip (SoC) based on RISC-V architecture for digital-analog interfacing. It combines RVMYTH processor , PLL , 10-bit DAC (all implemented using Sky130 technology).
-
+![Alt text](IMAGES/1.png)
 
 
