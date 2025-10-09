@@ -12,4 +12,4 @@ This week our aim is to understand and perform Gate-level Simulation after synth
 ![Alt text](IMAGES/7.png)
 ![Alt text](IMAGES/8.png)
 ![Alt text](IMAGES/9.png)
-![Alt text](IMAGES/10.png)
+
