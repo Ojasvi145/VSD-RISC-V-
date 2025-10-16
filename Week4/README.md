@@ -12,34 +12,34 @@ Supporting this analysis are foundational semiconductor principles, including th
 
 Finally, the discussion distinguishes between two fundamental types of current in semiconductor devices: drift current, which arises from electric fields, and diffusion current, which is driven by gradients in carrier concentration. Together, these concepts provide a rigorous framework for understanding transistor behavior under bias and inform the design of energy-efficient digital systems.
 
-1.This plot shows Id vs Vgs curve for nmos having width=0.375um length=0.25um
+## 1.This plot shows Id vs Vgs curve for nmos having width=0.375um length=0.25um
 ![Alt text](IMAGES/1.png)
-2.This plot shows Id vs Vgs curve for nmos having width=1.8um length=1.2um
+## 2.This plot shows Id vs Vgs curve for nmos having width=1.8um length=1.2um
 ![Alt text](IMAGES/2.png)
-Above plots tells that as width increases drain current increases.
+## Above plots tells that as width increases drain current increases.
 ![Alt text](IMAGES/3.png)
 
-3.This plot shows Id vs Vds curve for nmos having width=0.375um length=0.25um
+## 3.This plot shows Id vs Vds curve for nmos having width=0.375um length=0.25um
 ![Alt text](IMAGES/4.png)
-4.This plot shows Id vs Vds curve for nmos having width=1.8um length=1.2um
+## 4.This plot shows Id vs Vds curve for nmos having width=1.8um length=1.2um
 ![Alt text](IMAGES/5.png)
 
-5.CMOS inveter where switching threshold is around=0.881148 i.e Vdd/2
+## 5.CMOS inveter where switching threshold is around=0.881148 i.e Vdd/2
 ![Alt text](IMAGES/6.png)
 ![Alt text](IMAGES/7.png)
 
-6.CMOS delay calculation
+## 6.CMOS delay calculation
 ![Alt text](IMAGES/8.png)
-Rise time=2.48397-2.15385=0.33012nsec
+## Rise time=2.48397-2.15385=0.33012nsec
 ![Alt text](IMAGES/9.png)
-Fall time=4.33504-4.05128=0.28376nsec
+## Fall time=4.33504-4.05128=0.28376nsec
 ![Alt text](IMAGES/10.png)
 
-7.CMOS inverter having Voh=1.73182V Vil=0.762295V Vol=0.1V Vih=0.979508V
-Noise margin high=0.752312V : Noise margin low=0.662295V
+## 7.CMOS inverter having Voh=1.73182V Vil=0.762295V Vol=0.1V Vih=0.979508V
+## Noise margin high=0.752312V : Noise margin low=0.662295V
 ![Alt text](IMAGES/11.png)
 
-8. Gain(dc6)=(1.74545-0.113636)/(0.974359-0.75641)=7.487136899
+## 8. Gain(dc6)=(1.74545-0.113636)/(0.974359-0.75641)=7.487136899
 ![Alt text](IMAGES/12.png)
    Gain(dc5)=(1.51918-0.083636)/(0.876068-0.709402)=8.613298453
 ![Alt text](IMAGES/13.png)
@@ -52,7 +52,7 @@ Noise margin high=0.752312V : Noise margin low=0.662295V
    Gain(dc1)=(0.754545-0.05)/(0.5-0.431624)
 ![Alt text](IMAGES/17.png)
 
-So above observation tells gain increases as Vin and Vout decreses.
-If pfet width increased compared to nfet that means in vtc 1.8 stays staraight for longer time than gnd(device variation),strong pfet weak nfet and vm=1.8/2 should have been ideal but it is right shifted now.(Vm is 0.988)
-So therefore we say cmos is very robust
+## So above observation tells gain increases as Vin and Vout decreses.
+## If pfet width increased compared to nfet that means in vtc 1.8 stays staraight for longer time than gnd(device variation),strong pfet weak nfet and vm=1.8/2 should have been ideal but it is right shifted now.(Vm is 0.988)
+## So therefore we say cmos is very robust
 ![Alt text](IMAGES/18.png)
