@@ -1,5 +1,5 @@
 # Week 6 Task – DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING
-## Day 1 – Introduction to open-source EDA, OpenLANE, and the Sky130 PDK
+## Open-source EDA, OpenLANE, and the Sky130 PDK
 
 ### Context
 The file provides a comprehensive overview of open-source electronic design automation (EDA) with a focus on OpenLANE and the Sky130 process design kit (PDK). It explains the entire digital ASIC design flow from register-transfer level (RTL) design to the final GDSII layout using open-source tools.
