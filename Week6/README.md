@@ -70,7 +70,7 @@ The flow from software applications to hardware execution involves multiple laye
    - The binary instructions are sent to the hardware chip, which performs operations based on those instructions.
    - The hardware executes functions like arithmetic, logic, memory access, and I/O as directed by the binary instructions.
    
-In summary, the programming code is ultimately translated step-by-step to binary instructions that the hardware chip understands and executes, enabling software applications to run on physical hardware.[1]
+In summary, the programming code is ultimately translated step-by-step to binary instructions that the hardware chip understands and executes, enabling software applications to run on physical hardware.
 ___________
 To design a Digital ASIC (Application-Specific Integrated Circuit), key components and tools are required from the start:
 
@@ -306,9 +306,9 @@ This guide covers the typical workflow for designing and characterizing a librar
 - **Higher-level metalization:** Apply thick oxide layer (planarization), use CMP (polishing), then deposit and pattern metal for robust interconnects.
 
 ## 5. **ngspice Simulation and Characterization**
-- **DC Sim (VTC):** Sweep `Vin` from 0 to `Vdd` and observe the inverter transfer curve (VTC), check switching threshold $$ V_m $$ where $$ V_{in} = V_{out} $$.
+- **DC Sim (VTC):** Sweep `Vin` from 0 to `Vdd` and observe the inverter transfer curve (VTC), check switching threshold V_m  where  V_{in} = V_{out} .
 - **Transient Sim:** Apply a pulse to `Vin`, measure output rise/fall times, extract delays and slew rates.
-- **Impact of sizing:** Wider PMOS shifts $$ V_m $$ toward mid-point; choose sizes to optimize noise margins and robustness.
+- **Impact of sizing:** Wider PMOS shifts  V_m  toward mid-point; choose sizes to optimize noise margins and robustness.
 
 ## 6. **Analysis and Optimization**
 - **Switching threshold (Vm):** Critical for noise immunity; aim to keep it well within logic limits.
@@ -527,7 +527,7 @@ ___________
 
 **Impact on digital designs:**
 - Jitter reduces timing margins, which can lead to setup and hold violations at flip-flops and latches.
-- It can cause synchronization failures, errors in data capture, and degraded signal integrity, especially in high-speed or synchronous systems.[4][6][1]
+- It can cause synchronization failures, errors in data capture, and degraded signal integrity, especially in high-speed or synchronous systems.
 - When you do timing analysis, this uncertainty means the combinational delay between registers must satisfy: $$ \theta < (T - S - US) $$, where:
   - $$ \theta $$ is the total combinational delay
   - $$ T $$ is the clock period
