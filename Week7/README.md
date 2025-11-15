@@ -411,16 +411,14 @@ sudo ./setup.sh ./build_openroad.sh --local
 source ./env.sh
 yosys -help
 openroad -help
-cd flow```
+cd flow
+```
 2. Project Directory Structure
 Create vsdbabysoc inside:
 
 OpenROAD-flow-scripts/flow/designs/sky130hd
-
 OpenROAD-flow-scripts/flow/designs/src
 
 Add Verilog design files to src/vsdbabysoc.
-
 Copy .gds, .lef, .lib IP/macros into respective folders within sky130hd/vsdbabysoc.
-
 Add constraints (vsdbabysoc_synthesis.sdc), pin/macro configuration files (macro.cfg, pin_order.cfg).
