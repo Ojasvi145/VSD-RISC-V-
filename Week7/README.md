@@ -212,12 +212,14 @@ Backside Power Delivery Network (BS-PDN): Routes power on the wafer backside to 
 These enable 3D-aware layout styles (buried rails, BSI) used in sub-3 nm designs.
 
 4. Device Architecture Transitions:
+   
 | Device Type              | Gate/Channel Structure   | Control Efficiency | WC/WGW_C/W_GWC/WG | REXT/RchR_{EXT}/R_{ch}REXT/Rch | Remarks                                     |
 | ------------------------ | ------------------------ | ------------------ | ----------------- | ------------------------------ | ------------------------------------------- |
 | Planar MOS               | 1-sided flat gate        | Low                | 1                 | < 1                            | Minimal parasitic resistance                |
 | FinFET                   | Gate on 3 sides          | Medium-high        | ≈ 1/3             | ≈ 1                            | Balanced performance-density tradeoff       |
 | GAA (Nanosheet/Nanowire) | Gate all around          | Very high          | ≈ 1/6             | ≈ 3                            | Best electrostatics, high parasitic         |
 | CFET                     | Vertical NMOS+PMOS stack | Excellent          | ≈ 1/6             | ≈ 3                            | Doubles density, same parasitic bottlenecks |
+
 
 Lesson: As gates wrap more completely around channels, electrostatic control improves but parasitic resistance escalates due to smaller contact/fringe areas.
 
@@ -260,12 +262,14 @@ This section captures the frontier of nanoscale CMOS device scaling—from 22 nm
 
 1. Effective Capacitance (Cₑff) Evolution from 22 nm to 7 nm
 Observation: As CMOS nodes shrink, parasitic capacitances increasingly dominate transistor delay and power consumption.
+
 | Node  | Major Contributor                | Description                                                                                                |
 | ----- | -------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | 22 nm | Fringing capacitance (Cfr = 56%) | Field coupling between gate and contact dominated total Cₑff; intrinsic gate capacitance smaller share.    |
 | 14 nm | Cfr drops to 38%, Cpc‑ca rises   | Parasitic between contact and channel began limiting delay more than intrinsic factors.                    |
 | 10 nm | Cfr = 25%, Cpc‑ca dominates      | Shrinking geometries increased coupling between contacts and local interconnects.                          |
 | 7 nm  | Gate capacitance (Cg ≈ 45%)      | Transition: electrostatic gate control becomes dominant factor due to thinner oxides and shorter channels. |
+
 Implication: Parasitic control—not channel scaling—became the bottleneck after 14 nm. Improving dielectric isolation, spacer materials, and contact layouts are critical.
 
 2. Spacer Engineering and Cₑff Reduction
@@ -286,12 +290,14 @@ Air spacers demonstrated ≈15% Cₑff reduction, pushing delay and power envelo
 Conclusion: Spacer dielectric engineering is central to FEOL optimization. Air or low‑k cavities around the gate significantly decouple parasitic elements—especially crucial for GAA structures with dense gate spacing.
 
 3. 2D Channel Material Advantages (MoS₂ Example)
-4. | Property              | MoS₂                        | Silicon (Si)      | Advantage                                             |
+
+| Property              | MoS₂                        | Silicon (Si)      | Advantage                                             |
 | --------------------- | --------------------------- | ----------------- | ----------------------------------------------------- |
 | Monolayer thickness   | ~0.65 nm                    | ~3–5 nm (channel) | Ideal atomic‑scale thickness for sub‑1 nm devices.    |
 | Effective massm∗m^*m∗ | 0.55 m₀                     | 0.22 m₀           | Higher mass suppresses tunneling leakage.             |
 | Bandgap               | ~1.85 eV (1L), ~1.5 eV (2L) | 1.12 eV           | Wide gap reduces off‑current and leakage.             |
 | Dielectric constant   | Low (~3–5)                  | ~11.9             | ImprovesCD/CoxC_D/C_{ox}CD/Coxratio for gate control. |
+
 
 4. Direct Source‑to‑Drain Tunneling Physics
 As gate length Lg shrinks below ~5 nm, potential barriers thin enough for quantum tunneling cause leakage.
@@ -320,6 +326,7 @@ Low leakage and scalable subthreshold slope (<70 mV/dec).
 
 Proof that physical gate control can persist even at atomic length scales.
 6. All‑2D MOSFET Architecture and Fabrication:
+
 | Layer             | Material | Function                                  |
 | ----------------- | -------- | ----------------------------------------- |
 | Source/Drain/Gate | Graphene | Ultra‑conductive 2D contact electrode     |
@@ -358,6 +365,7 @@ Implication:
 Monolithic 3D and CFET concepts converge—both aim to vertically integrate complementary devices, advancing beyond 2D chip layouts.
 
 8. Summary of the Scaling Transition Path:
+   
 | Domain          | 22 nm → 7 nm             | Beyond 7 nm to 1 nm        | Post‑1 nm                               |
 | --------------- | ------------------------ | -------------------------- | --------------------------------------- |
 | Dielectrics     | SiN → SiBCN → Air spacer | Ultra‑low k + air cavities | 2D material isolation                   |
@@ -365,6 +373,7 @@ Monolithic 3D and CFET concepts converge—both aim to vertically integrate comp
 | Structure       | FinFET → GAA             | CFET, 3D stacking          | Monolithic 3D logic                     |
 | Leakage Control | Strain + HKMG            | Quantum‑confined TMDs      | Quantum/2D tunneling FETs               |
 | Integration     | DTCO                     | STCO                       | System‑scale chiplet/hetero integration |
+
 Here’s a clear technical summary linking advanced interconnect scaling challenges and solutions with OpenROAD physical design automation—including stepwise setup instructions and configuration for a custom ASIC using the Sky130hd platform.
 
 Interconnect Scaling: Cu, Ru, and Barriers
