@@ -173,6 +173,7 @@ Each transistor architecture contributes incremental efficiency gains that, when
 
 This topic provides a detailed continuum of CMOS node evolution—from 22 nm FinFET introduction to sub-1 nm CFET and 2D-material-based FET architectures—highlighting both structural innovations and material challenges that define each generation. Here’s a structured technical summary to tie all these together with performance and process insights.
 1. Evolution of Key Technology Nodes
+   
 | Node                             | Key Innovations                                                                                   | Purpose/Impact                                                                     |
 | -------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | 22 nm (2011–2012)                | FinFET (Tri-Gate) introduction, Self-Aligned Contacts (SAC), Copper interconnects (Co+Cu BEOL)    | Solved planar leakage limits; better electrostatic control; start of 3D device era |
@@ -185,12 +186,14 @@ This topic provides a detailed continuum of CMOS node evolution—from 22 nm Fin
 
 2. Fin Depopulation and Density Scaling (Samsung’s Example)
 In FinFET designs, transistor drive current and area efficiency depend on fin number and height. “Fin depopulation” reduces the number of fins per transistor while keeping fin width and pitch fixed, enabling denser layouts.
+
 | Node  | Fin Height | Fins per Device | Process Class | Trend                                                   |
 | ----- | ---------- | --------------- | ------------- | ------------------------------------------------------- |
 | 10 nm | 420 nm     | 10              | HD            | Baseline                                                |
 | 8 nm  | 378 nm     | 9               | UHD           | Slight reduction                                        |
 | 7 nm  | 27 nm      | 8               | HD            | Transition to EUV-ready scaling                         |
 | 5 nm  | 27 nm      | 7               | UHD           | Optimized for smaller cell height and lower capacitance |
+
 This controlled depopulation maintains transistor performance while increasing integration density.
 
 3. Diffusion Break and Contact Innovations
@@ -215,6 +218,7 @@ These enable 3D-aware layout styles (buried rails, BSI) used in sub-3 nm designs
 | FinFET                   | Gate on 3 sides          | Medium-high        | ≈ 1/3             | ≈ 1                            | Balanced performance-density tradeoff       |
 | GAA (Nanosheet/Nanowire) | Gate all around          | Very high          | ≈ 1/6             | ≈ 3                            | Best electrostatics, high parasitic         |
 | CFET                     | Vertical NMOS+PMOS stack | Excellent          | ≈ 1/6             | ≈ 3                            | Doubles density, same parasitic bottlenecks |
+
 Lesson: As gates wrap more completely around channels, electrostatic control improves but parasitic resistance escalates due to smaller contact/fringe areas.
 
 5. Parasitic Resistance Breakdown and Optimization
@@ -225,11 +229,13 @@ NFET:contribution reduced from 63% → 48% through advanced contact metals and d
 
 PFET: ortion reduced from 50% → 22% by epitaxial stress and S/D engineering.
 6. Variability and Voltage Control Across Eras
+
 | Technology                        | TypicalVtV_tVtVariability | Key Factor                                        |
 | --------------------------------- | ------------------------- | ------------------------------------------------- |
 | Planar MOSFET (100 nm+)           | ≈ 130 mV                  | Random dopant and oxide thickness fluctuation     |
 | FinFET (~22 nm)                   | ≈ 14 mV                   | 3D geometry, better electrostatics                |
 | Nanowire / GAA (~14 nm and below) | ≈ 7 mV                    | Quantum confinement and tight dimensional control |
+
 Reduced Vt variability stabilizes performance and leakage across large transistor populations—crucial for AI and HPC workloads.
 7. Toward the Sub-1 nm Era
 CFET Integration: Vertical NMOS–PMOS stacking reduces footprint by ~50%, saving routing space.
@@ -241,6 +247,7 @@ Backside Contacts + BS-PDN: Enable vertical current flow and decoupled signal/po
 Challenges: Managing contact resistance, alignment tolerance, and atomic interface reliability.
 
 8. Summary of Evolution Trends
+   
 | Aspect           | Evolution Path               | Scaling Emphasis        |
 | ---------------- | ---------------------------- | ----------------------- |
 | Channel Material | Si → SiGe → 2D (MoS₂, WSe₂)  | Mobility and leakage    |
@@ -248,6 +255,7 @@ Challenges: Managing contact resistance, alignment tolerance, and atomic interfa
 | Architecture     | Planar → FinFET → GAA → CFET | Density and control     |
 | Interconnect     | Cu → Co/Ru/BSI               | Resistivity and IR drop |
 | Co-Optimization  | DTCO → STCO                  | Design-device alignment |
+
 This section captures the frontier of nanoscale CMOS device scaling—from 22 nm node parasitic capacitance engineering to all‑2D transistor architectures nearing the 1 nm regime. Each concept reflects the convergence of materials science, fabrication strategy, and device physics for sustaining Moore’s Law beyond traditional silicon. Below is a comprehensive, structured breakdown.
 
 1. Effective Capacitance (Cₑff) Evolution from 22 nm to 7 nm
@@ -318,6 +326,7 @@ Proof that physical gate control can persist even at atomic length scales.
 | Channel           | MoS₂     | 2D semiconductor for switching            |
 | Dielectric        | h‑BN     | 2D insulator; atomically sharp interfaces |
 | Substrate         | Si/SiO₂  | Mechanical support; optional back‑gate    |
+
 Fabrication Steps:
 
 Deposit graphene on SiO₂ as gate.
