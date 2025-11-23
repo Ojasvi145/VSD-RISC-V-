@@ -63,7 +63,6 @@ WHS (Worst Hold Slack): most negative hold slack (earliest-arrival violation); i
 
 THS (Total Hold Slack): sum of all negative hold slacks; measures aggregate hold problem size.​
 
-In your Week 8 comparison table, each cell is exactly one of these metrics, taken from pre-layout (Week 3 OpenSTA) vs post-layout (Week 8 OpenSTA with SPEF) for each defined corner.​
 
 Why post-route timing differs from pre-route
 The logical connectivity is identical, but physical details change delays:
